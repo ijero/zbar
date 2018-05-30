@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion setup.cSdk
+    defaultConfig {
+        minSdkVersion setup.mSdk
+        targetSdkVersion setup.tSdk
+    }
+}
+
+dependencies {
+    implementation 'com.google.zxing:core:3.3.1'
+}
